@@ -3,23 +3,17 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <section class="featured-posts">
-     <PostPreview
-     id="1"
-     thumbnail="https://static.pexels.com/photos/270348/pexels-photo-270348.jpeg"
-     title="hello there"
-     previewText="this is my first post"/>
-      
-    </section>
+      <PostList />
+  
   </div> 
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview'
+import PostList from '@/components/Posts/PostList'
 
 export default {
   components: {
-    PostPreview: PostPreview
+     PostList
   }
 
 }
@@ -34,6 +28,7 @@ export default {
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
+  background-image: url('~assets/images/pexels-photo-1181673.jpeg')
 }
 
 .intro h1 {
@@ -65,6 +60,8 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
+
 
 
 
